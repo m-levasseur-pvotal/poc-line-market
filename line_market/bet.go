@@ -5,10 +5,15 @@ import (
 )
 
 type Bet struct {
-	ID          string
-	Size        int64
-	Odds        int64
-	Runs        int64
+	ID string
+	// Size the size of the bet
+	Size int64
+	// Odds expressed in percentage
+	Odds int64
+	// Runs the number of the runs you bet on
+	Runs int64
+	// RunsAndOver true if win when the result is equal or greater than runs value
+	// false if win when the result is equal or lower than runs value
 	RunsAndOver bool
 }
 
